@@ -1,268 +1,272 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  @layer components {
-    /* main */
-    .main-container {
-      @apply flex min-h-screen flex-1 flex-col items-center  px-6 pb-10 pt-28 max-md:pb-32 sm:px-10;
-    }
-  
-    /* Head Text */
-    .head-text {
-      @apply text-heading2-bold text-light-1;
-    }
-  
-    /* Activity */
-    .activity-card {
-      @apply flex items-center gap-2 rounded-md bg-dark-2 px-7 py-4;
-    }
-  
-    /* No Result */
-    .no-result {
-      @apply text-center !text-base-regular text-light-3;
-    }
-  
-    /* Community Card */
-    .community-card {
-      @apply w-full rounded-lg bg-dark-3 px-4 py-5 sm:w-96;
-    }
-  
-    .community-card_btn {
-      @apply rounded-lg bg-[#ff7650] px-5 py-1.5 text-small-regular !text-light-1 !important;
-    }
-  
-    /* thread card  */
-    .thread-card_bar {
-      @apply relative mt-2 w-0.5 grow rounded-full bg-neutral-800;
-    }
-  
-    /* User card */
-    .user-card {
-      @apply flex flex-col justify-between gap-4 max-xs:rounded-xl max-xs:bg-dark-3 max-xs:p-4 xs:flex-row xs:items-center;
-    }
-  
-    .user-card_avatar {
-      @apply flex flex-1 items-start justify-start gap-3 xs:items-center;
-    }
-  
-    .user-card_btn {
-      @apply h-auto min-w-[74px] rounded-lg bg-[#ff7650] text-[12px] text-light-1 !important;
-    }
-  
-    .searchbar {
-      @apply flex gap-1 rounded-lg bg-dark-3 px-4 py-2;
-    }
-  
-    .searchbar_input {
-      @apply border-none bg-dark-3 text-base-regular text-light-4 outline-none !important;
-    }
-  
-    .topbar {
-      @apply fixed top-0 z-30 flex w-full items-center justify-between bg-[#F8F8FB] px-6 py-3;
-    }
-  
-    .bottombar {
-      @apply fixed bottom-0 z-10 w-full rounded-t-3xl bg-glassmorphism p-4 backdrop-blur-lg xs:px-7 md:hidden;
-    }
-  
-    .bottombar_container {
-      @apply flex items-center justify-between gap-3 xs:gap-5;
-    }
-  
-    .bottombar_link {
-      @apply relative flex flex-col items-center gap-2 rounded-lg p-2 sm:flex-1 sm:px-2 sm:py-2.5;
-    }
-    .detail-container{
-      @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(500px,_1fr)_250px]  xl:grid-cols-[minmax(700px,_1fr)_300px] 2xl:grid-cols-[minmax(900px,_1fr)_600px]
-    }
-    .detail-cards-container{
-      @apply grid gap-[20px] p-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-2  xl:grid-cols-2 2xl:grid-cols-2
-    }
-    .detail-order-product-container{
-      @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-1  lg:grid-cols-[200px_minmax(300px,_1fr)_300px]  xl:grid-cols-[200px_minmax(300px,_1fr)_300px] 2xl:grid-cols-[200px_minmax(300px,_1fr)_300px]
-    }
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  /* main */
+  .main-container {
+    @apply flex min-h-screen flex-1 flex-col items-center  px-6 pb-10 pt-28 max-md:pb-32 sm:px-10;
+  }
 
-    .customer-detail-container{
-      @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(250px,_1fr)_500px]  xl:grid-cols-[minmax(300px,_1fr)_700px] 2xl:grid-cols-[minmax(400px,_1fr)_1200px]
-    }
-    .detail-cards-container{
-      @apply grid gap-[20px] p-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-2  xl:grid-cols-2 2xl:grid-cols-2
-    }
-    .detail-customer-order-container{
-      @apply grid  sm:grid-cols-1 gap-[20px]   md:grid-cols-1  lg:grid-cols-1 xl:grid-cols-4 2xl:grid-cols-4
-    }
+  /* Head Text */
+  .head-text {
+    @apply text-heading2-bold text-light-1;
+  }
 
-    .detail-product-container{
-      @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(250px,_1fr)_500px]  xl:grid-cols-[minmax(300px,_1fr)_700px] 2xl:grid-cols-[minmax(600px,_1fr)_900px]
-    }
+  /* Activity */
+  .activity-card {
+    @apply flex items-center gap-2 rounded-md bg-dark-2 px-7 py-4;
+  }
 
-    .leftsidebar {
-      @apply sticky left-0 top-0 z-20 flex h-screen w-fit min-w-[200px] flex-col justify-between overflow-auto border-r border-r-[#F6F6F6] bg-[#F6F6F6] pb-5 pt-28 max-md:hidden;
-    }
-  
-    .leftsidebar_link {
-      @apply relative w-full  flex justify-start  gap-x-2   p-1;
-    }
-  
-    .pagination {
-      @apply mt-10 flex w-full items-center justify-center gap-5;
-    }
-  
-    .rightsidebar {
-      @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-l border-l-dark-4 bg-dark-2 px-10 pb-6 pt-28 max-xl:hidden;
-    }
+  /* No Result */
+  .no-result {
+    @apply text-center !text-base-regular text-light-3;
   }
-  
-  @layer utilities {
-    .css-invert {
-      @apply invert-[50%] brightness-200;
-    }
-  
-    .custom-scrollbar::-webkit-scrollbar {
-      width: 3px;
-      height: 3px;
-      border-radius: 2px;
-    }
-  
-    .custom-scrollbar::-webkit-scrollbar-track {
-      background: #09090a;
-    }
-  
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-      background: #5c5c7b;
-      border-radius: 50px;
-    }
-  
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #7878a3;
-    }
+
+  /* Community Card */
+  .community-card {
+    @apply w-full rounded-lg bg-dark-3 px-4 py-5 sm:w-96;
   }
-  
-  /* Clerk Responsive fix */
-  .cl-organizationSwitcherTrigger .cl-userPreview .cl-userPreviewTextContainer {
-    @apply max-sm:hidden;
+
+  .community-card_btn {
+    @apply rounded-lg bg-[#ff7650] px-5 py-1.5 text-small-regular !text-light-1 !important;
   }
-  
-  .cl-organizationSwitcherTrigger
-    .cl-organizationPreview
-    .cl-organizationPreviewTextContainer {
-    @apply max-sm:hidden;
+
+  /* thread card  */
+  .thread-card_bar {
+    @apply relative mt-2 w-0.5 grow rounded-full bg-neutral-800;
   }
-  
-  /* Shadcn Component Styles */
-  
-  /* Tab */
-  .tab {
-    @apply flex min-h-[50px] flex-1 items-center gap-3 bg-dark-2 text-light-2 data-[state=active]:bg-[#0e0e12] data-[state=active]:text-light-2 !important;
+
+  /* User card */
+  .user-card {
+    @apply flex flex-col justify-between gap-4 max-xs:rounded-xl max-xs:bg-dark-3 max-xs:p-4 xs:flex-row xs:items-center;
   }
-  .shadow{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+  .user-card_avatar {
+    @apply flex flex-1 items-start justify-start gap-3 xs:items-center;
   }
-  
-  .no-focus {
-    @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+
+  .user-card_btn {
+    @apply h-auto min-w-[74px] rounded-lg bg-[#ff7650] text-[12px] text-light-1 !important;
   }
-  
-  /* Account Profile  */
-  .account-form_image-label {
-    @apply flex h-24 w-24 items-center justify-center rounded-full bg-dark-4 !important;
+
+  .searchbar {
+    @apply flex gap-1 rounded-lg bg-dark-3 px-4 py-2;
   }
-  
-  .account-form_image-input {
-    @apply cursor-pointer border-none bg-transparent outline-none file:text-blue !important;
+
+  .searchbar_input {
+    @apply border-none bg-dark-3 text-base-regular text-light-4 outline-none !important;
   }
-  
-  .account-form_input {
-    @apply border border-dark-4 bg-dark-3 text-light-1 !important;
+
+  .topbar {
+    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-[#F8F8FB] px-6 py-3;
   }
-  
-  /* Comment Form */
-  .comment-form {
-    @apply mt-10 flex items-center gap-4 border-y border-y-dark-4 py-5 max-xs:flex-col !important;
+
+  .bottombar {
+    @apply fixed bottom-0 z-10 w-full rounded-t-3xl bg-glassmorphism p-4 backdrop-blur-lg xs:px-7 md:hidden;
   }
-  
-  .comment-form_btn {
-    @apply rounded-3xl bg-[#ff7650] px-8 py-2 !text-small-regular text-light-1 max-xs:w-full !important;
+
+  .bottombar_container {
+    @apply flex items-center justify-between gap-3 xs:gap-5;
   }
-  
-  textarea:focus, input:focus{
-    outline: none;
+
+  .bottombar_link {
+    @apply relative flex flex-col items-center gap-2 rounded-lg p-2 sm:flex-1 sm:px-2 sm:py-2.5;
+  }
+  .detail-container {
+    @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(500px,_1fr)_250px]  xl:grid-cols-[minmax(700px,_1fr)_300px] 2xl:grid-cols-[minmax(900px,_1fr)_600px];
+  }
+  .detail-cards-container {
+    @apply grid gap-[20px] p-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-2  xl:grid-cols-2 2xl:grid-cols-2;
+  }
+  .detail-order-product-container {
+    @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-1  lg:grid-cols-[200px_minmax(300px,_1fr)_300px]  xl:grid-cols-[200px_minmax(300px,_1fr)_300px] 2xl:grid-cols-[200px_minmax(300px,_1fr)_300px];
+  }
+
+  .customer-detail-container {
+    @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(250px,_1fr)_500px]  xl:grid-cols-[minmax(300px,_1fr)_700px] 2xl:grid-cols-[minmax(400px,_1fr)_1200px];
+  }
+  .detail-cards-container {
+    @apply grid gap-[20px] p-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-2  xl:grid-cols-2 2xl:grid-cols-2;
+  }
+  .detail-customer-order-container {
+    @apply grid  sm:grid-cols-1 gap-[20px]   md:grid-cols-1  lg:grid-cols-1 xl:grid-cols-4 2xl:grid-cols-4;
+  }
+
+  .detail-product-container {
+    @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(250px,_1fr)_500px]  xl:grid-cols-[minmax(300px,_1fr)_700px] 2xl:grid-cols-[minmax(600px,_1fr)_900px];
+  }
+
+  .leftsidebar {
+    @apply sticky left-0 top-0 z-20 flex h-screen w-fit min-w-[200px] flex-col justify-between overflow-auto border-r border-r-[#F6F6F6] bg-[#F6F6F6] pb-5 pt-28 max-md:hidden;
+  }
+
+  .leftsidebar_link {
+    @apply relative w-full  flex justify-start  gap-x-2   p-1;
+  }
+
+  .pagination {
+    @apply mt-10 flex w-full items-center justify-center gap-5;
+  }
+
+  .rightsidebar {
+    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-l border-l-dark-4 bg-dark-2 px-10 pb-6 pt-28 max-xl:hidden;
+  }
 }
 
-  .loader {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #FFF;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    margin: 0 5px;
-    
-    }
-    .toast-default {
-      background-color: #333;
-      color: #fff;
-    }
-    
-    .toast-success {
-      background-color: #28a745;
-      color: #fff;
-    }
-    
-    .toast-error {
-      background-color: #dc3545;
-      color: #fff;
-    }
-    
-    .toast-warning {
-      background-color: #ffc107;
-      color: #000;
-    }
-    
-    .toast-info {
-      background-color: #17a2b8;
-      color: #fff;
-    }
-    
-    .toast svg {
-      width: 24px;
-      height: 24px;
-    }
+@layer utilities {
+  .css-invert {
+    @apply invert-[50%] brightness-200;
+  }
 
-    @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    } 
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
 
-    .tabs-list {
-      background-color: #f8f8f8;
-      padding: 0.5rem;
-      margin-top: 1rem;
-      display: flex;
-      gap: 0.5rem;
-    }
-    .tabs-trigger {
-      padding: 0rem 1rem;
-      cursor: pointer;
-      border: none;
-      transition: color 0.3s, background-color 0.3s;
-    }
-    .tabs-trigger-active {
-      color: white;
-      border-bottom: 2px solid #ff7650;
-      border-radius: 0;
-      color: #ff7650; /* Active tab background color */
-    }
-    .tabs-content {
-      padding: .5rem;
-    }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
 
-    .shadow {
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+}
+
+/* Clerk Responsive fix */
+.cl-organizationSwitcherTrigger .cl-userPreview .cl-userPreviewTextContainer {
+  @apply max-sm:hidden;
+}
+
+.cl-organizationSwitcherTrigger
+  .cl-organizationPreview
+  .cl-organizationPreviewTextContainer {
+  @apply max-sm:hidden;
+}
+
+/* Shadcn Component Styles */
+
+/* Tab */
+.tab {
+  @apply flex min-h-[50px] flex-1 items-center gap-3 bg-dark-2 text-light-2 data-[state=active]:bg-[#0e0e12] data-[state=active]:text-light-2 !important;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.no-focus {
+  @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+}
+
+/* Account Profile  */
+.account-form_image-label {
+  @apply flex h-24 w-24 items-center justify-center rounded-full bg-dark-4 !important;
+}
+
+.account-form_image-input {
+  @apply cursor-pointer border-none bg-transparent outline-none file:text-blue !important;
+}
+
+.account-form_input {
+  @apply border border-dark-4 bg-dark-3 text-light-1 !important;
+}
+
+/* Comment Form */
+.comment-form {
+  @apply mt-10 flex items-center gap-4 border-y border-y-dark-4 py-5 max-xs:flex-col !important;
+}
+
+.comment-form_btn {
+  @apply rounded-3xl bg-[#ff7650] px-8 py-2 !text-small-regular text-light-1 max-xs:w-full !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 5px;
+}
+.toast-default {
+  background-color: #333;
+  color: #fff;
+}
+
+.toast-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.toast-error {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.toast-warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.toast-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.toast svg {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tabs-list {
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.tabs-trigger {
+  padding: 0rem 1rem;
+  cursor: pointer;
+  border: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+.tabs-trigger-active {
+  color: white;
+  border-bottom: 2px solid #ff7650;
+  border-radius: 0;
+  color: #ff7650; /* Active tab background color */
+}
+.tabs-content {
+  padding: 0.5rem;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.service-container {
+  @apply grid gap-x-[20px] gap-y-[30px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-3 2xl:grid-cols-3;
+}
