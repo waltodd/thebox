@@ -23,7 +23,7 @@ const ServiceCard:React.FC<ServiceCardProps> = ({
                 <div className="bg-[#E0E3EB] mt-4 w-[60px] h-[2px]"></div>
             </div>
             <div className="py-6">
-                <p className={` ${textStyles} text-[20px] psemibold `}>{title}</p>
+                <p className={` ${textStyles} text-[20px] font-semibold `}>{title}</p>
             </div>
         </div>
     )

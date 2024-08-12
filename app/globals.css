@@ -268,5 +268,5 @@ input:focus {
 }
 
 .service-container {
-  @apply grid gap-x-[20px] gap-y-[30px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-3 2xl:grid-cols-3;
+  @apply grid gap-x-[0px] gap-y-[30px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-3 2xl:grid-cols-3;
 }
