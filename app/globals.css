@@ -270,3 +270,7 @@ input:focus {
 .service-container {
   @apply justify-center items-center grid  gap-x-[0px] gap-y-[30px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-3 2xl:grid-cols-3;
 }
+
+.footer-links {
+  @apply grid gap-[20px] sm:grid-cols-1  md:grid-cols-2  lg:grid-cols-[minmax(500px,_1fr)_450px]  xl:grid-cols-[minmax(500px,_1fr)_450px] 2xl:grid-cols-[minmax(500px,_1fr)_450px];
+}

@@ -6,6 +6,9 @@ import Renovation from '@/assets/icons/Renovation.png'
 import Repair from '@/assets/icons/Repair.png'
 import Menu from '@/assets/icons/menu.png'
 import X from '@/assets/icons/X.png'
+import Facebook from '@/assets/icons/facebook.png'
+import Linkedin from '@/assets/icons/Linkedin.png'
+import Twitter from '@/assets/icons/Twitter.png'
 
 export default{
     Construction,
@@ -15,5 +18,8 @@ export default{
     Consulting,
     Repair,
     X,
-    Menu
+    Menu,
+    Facebook,
+    Linkedin,
+    Twitter
 }
