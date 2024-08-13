@@ -14,7 +14,7 @@ const CTA = () => {
         </p>
 
         <div>
-          <div className="flex justify-between items-center gap-x-4 py-4">
+          <div className="flex ctd-card justify-between items-center gap-x-4 py-4">
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="email">Your Name <span className="text-[#ED6565]">*</span></Label>
               <Input type="email" id="email" placeholder="Your Name" />
@@ -24,7 +24,7 @@ const CTA = () => {
               <Input type="email" id="email" placeholder="Email" />
             </div>
           </div>
-          <div className="flex justify-between items-center gap-x-4 py-4">
+          <div className="flex ctd-card justify-between items-center gap-x-4 py-4">
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="email">Reason for contacting <span className="text-[#ED6565]">*</span></Label>
               <Input type="email" id="email" placeholder="Reason for contacting" />
