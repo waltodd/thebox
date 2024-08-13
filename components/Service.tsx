@@ -12,7 +12,7 @@ const Service = () => {
         <ServiceCard
           icon={icons.Construction}
           title="Construction"
-          otherStyles=""
+          otherStyles="bg-[#FFFFFF]"
           textStyles="text-[#2947A9]"
         />
         <ServiceCard
@@ -24,7 +24,7 @@ const Service = () => {
         <ServiceCard
           icon={icons.Consulting}
           title="Consulting"
-          otherStyles=""
+          otherStyles="bg-[#FFFFFF]"
           textStyles="text-[#2947A9]"
         />
         <ServiceCard
@@ -36,7 +36,7 @@ const Service = () => {
         <ServiceCard
           icon={icons.Architecture}
           title="Architecture"
-          otherStyles=""
+          otherStyles="bg-[#FFFFFF]"
           textStyles="text-[#2947A9]"
         />
         <ServiceCard
