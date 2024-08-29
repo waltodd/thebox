@@ -4,11 +4,12 @@ import AboutUs from "@/components/AboutUs";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import Ads from "@/components/Ads";
+import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* <AboutUs /> */}
-      
+      <Hero />
       <Service />
       <Ads />
       <CTA />
